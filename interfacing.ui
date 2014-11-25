@@ -26,11 +26,11 @@
       <x>70</x>
       <y>190</y>
       <width>861</width>
-      <height>381</height>
+      <height>441</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -104,10 +104,23 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>10</y>
+        <y>40</y>
         <width>841</width>
-        <height>331</height>
+        <height>351</height>
        </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>0</y>
+        <width>161</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Clear Graph</string>
       </property>
      </widget>
     </widget>
@@ -115,6 +128,16 @@
      <attribute name="title">
       <string>Table</string>
      </attribute>
+     <widget class="QTableWidget" name="tbl_inputdata">
+      <property name="geometry">
+       <rect>
+        <x>-20</x>
+        <y>0</y>
+        <width>831</width>
+        <height>391</height>
+       </rect>
+      </property>
+     </widget>
     </widget>
    </widget>
    <widget class="QGroupBox" name="groupBox_2">
@@ -219,6 +242,9 @@
         <property name="currentText">
          <string>9600</string>
         </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
         <item>
          <property name="text">
           <string>9600</string>
@@ -237,6 +263,11 @@
         <item>
          <property name="text">
           <string>115200</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Pilih</string>
          </property>
         </item>
        </widget>
@@ -266,7 +297,17 @@
        <widget class="QComboBox" name="cmb_Port">
         <item>
          <property name="text">
+          <string>pilih</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
           <string>ttyUSB0</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>ttyACM4</string>
          </property>
         </item>
         <item>
